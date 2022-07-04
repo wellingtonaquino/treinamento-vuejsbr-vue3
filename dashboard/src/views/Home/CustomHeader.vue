@@ -10,7 +10,7 @@
                     <button class="px-6 py-2 font-bold text-white rounded-full focus:outline-none"
                         id="header-create-account-button"
                         @click="() => emit('create-account')">
-                        Crie uma conta agora!
+                        Crie uma conta
                     </button>
                     <button class="px-6 py-2 font-bold text-brand-main bg-white rounded-full focus:outline-none"
                         id="header-login-button"
