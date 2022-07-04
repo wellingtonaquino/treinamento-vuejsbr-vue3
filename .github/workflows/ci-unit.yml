@@ -1,29 +1,29 @@
-name: Unit testing
+name: Dashboard unit testing
 
 on:
-  workflow dispatch:
-  push: 
+  workflow_dispatch:
+  push:
     branches: [ $default-branch ]
   pull_request:
     branches: [ $default-branch ]
 
-defaults
+defaults:
   run:
     working-directory: dashboard
 
-  jobs:
-    jest:
-      runs-on: ubuntu-latest
+jobs:
+  jest:
+    runs-on: ubuntu-latest
 
-  strategy: 
-    matrix:
-      node-version: [13.x]
+    strategy:
+      matrix:
+        node-version: [13.x]
 
-  steps:
+    steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }} 
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
-      with: 
+      with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install 
-    - run: npm run test: unit --if-present
+    - run: npm install
+    - run: npm run test:unit --if-present
