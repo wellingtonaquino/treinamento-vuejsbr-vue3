@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render home correctly 1`] = `
+<header class="header">
+  <div class="header-group">
+    <div class="flex items-center justify-between py-10">
+      <div class="w-28 lg:w-36"><img class="w-full" src="" alt="logo"></div>
+      <div class="flex"><button class="px-6 py-2 font-bold text-white rounded-full focus:outline-none"> Crie uma conta </button><button class="px-6 py-2 font-bold text-brand-main bg-white rounded-full focus:outline-none"> Entrar </button></div>
+    </div>
+    <div class="flex flex-col mt-28">
+      <h1 class="text-4xl font-black text-white"> Tenha um feedback. <br> E faça seus clientes mais <br class="hiden lg:inline-block"> felizes! </h1>
+      <p class="text-lg font-small text-white"> Receba ideias, reclamações e feedbacks com um <br class="hiden lg:inline-block"> simples widget na página. </p>
+      <div><button class="mt-10 px-6 py-2 font-bold text-brand-main bg-white rounded-full focus:outline-none"> Crie uma conta grátis </button></div>
+    </div>
+  </div>
+</header>
+<div class="flex justify-center w-full">
+  <div class="flex flex-col items-center w-4/5 max-w-6xl my-10">
+    <h1 class="text-4xl font-black text-center text-gray-800"> Alguma dúvida? </h1>
+    <p class="text-lg text-center text-gray-800 font-regular"> Quer saber melhor como e funciona e quais são os preços? </p>
+    <div class="m-10"><a href="mailto:" class="px-6 py-2 font-bold text-white rounded-full bg-brand-main focus:outline-none"> Nos mande um email </a></div>
+  </div>
+</div>
+<div class="flex justify-center py-10 bg-brand-gray">
+  <p class="font-medium text-center text-gray-800">feedbacker © 2021</p>
+</div>
+`;
